@@ -30,7 +30,7 @@ function result1(diemChuan , diemMon1 , diemMon2 , diemMon3 , doiTuongThi , khuV
 
     var diemUuTienKhuVuc  ;
     if(khuVucThi == "-1"){
-        alert("Chọn khu vực thi.")
+        alert("Chọn khu vực thi.") ; 
     }else if(khuVucThi == "0"){
         diemUuTienKhuVuc = 0 ;
     }
@@ -43,9 +43,9 @@ function result1(diemChuan , diemMon1 , diemMon2 , diemMon3 , doiTuongThi , khuV
         diemUuTienKhuVuc = 0.5  ;
     }
 
-    var diemTong ; 
+    var diemTong  = 0  ; 
     diemTong = diemTong3Mon + diemUuTienDoiTuong + diemUuTienKhuVuc ; 
-
+    if(khuVucThi != "-1" && doiTuongThi != "-1" ){
     if(diemMon1 != 0 && diemMon2 != 0 && diemMon3 != 0 && diemTong >= diemChuan){
         document.getElementById("resultBai1").innerHTML ="Điểm của bạn là " + diemTong + ".Bạn đã trúng tuyển."
     }else if(diemMon1 != 0 && diemMon2 != 0 && diemMon3 != 0 && diemTong < diemChuan){
@@ -55,6 +55,9 @@ function result1(diemChuan , diemMon1 , diemMon2 , diemMon3 , doiTuongThi , khuV
     }else {
         document.getElementById("resultBai1").innerHTML ="Điểm của bạn là " + diemTong + ".Bạn đã trượt."
     }
+}else {
+    alert("Chọn đầy đủ khu vực và đối tượng thi.") ; 
+}
     console.log(diemTong) ; 
 
 }
