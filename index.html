@@ -89,7 +89,27 @@
                   <h3 id="resultBai3" class="text-primary"></h3>
                 </div>
                 <!-- bài 4  -->
-                <div class="tab-pane fade" id="Bai4" role="tabpanel" >Bai 4</div>
+                <div class="tab-pane fade" id="Bai4" role="tabpanel" >
+                  <h3 class="text-center text-primary">Tính tiền cáp</h3>
+                  <form class="formBai4">
+                    <!-- chọn loại khách hàng  -->
+                    <select class="btn btn-info"  id="customer">
+                      <option value="0">Chọn loại khách hàng</option>
+                      <option value="1">Nhà dân</option>
+                      <option value="2">Doanh nghiệp</option>
+                    </select> <br>
+                    <label class="mt-4" for="codeCustomer">Nhập mã khách hàng >></label>
+                    <input type="number" id="codeCustomer"> <br>
+                    <label class="mt-4" for="highChannel">Số kênh cao cấp >></label>
+                    <input type="number" id="highChannel"> <br>
+                    <div id="soKNDiv" class="soKN">
+                      <label class="mt-4" for="soKN">Nhập số kết nối >></label>
+                      <input type="number" id="soKN"> <br>
+                    </div>
+                    <button class="btn btn-success mt-4" type="button" id="btnBai4">Tính tiền cáp</button>
+                  </form>
+                  <h3 id="resutlBai4" class="text-primary mt-4"></h3>
+                </div>
               </div>
             </div>
           </div>
