@@ -63,9 +63,31 @@
                     <h3 class="text-info" id="resultBai1">Kết quả : </h3>
                 </div>
                 <!-- bài 2  -->
-                <div class="tab-pane fade" id="Bai2" role="tabpanel" >Bai 2</div>
+                <div class="tab-pane fade" id="Bai2" role="tabpanel" >
+                  <h2 class="text-center text-primary">Tính tiền điện</h2>
+                  <form class="formBai2">
+                    <label for="eUser">Tên người dùng</label>
+                    <input type="text" id="eUser" placeholder="Nhập tên"> <br>
+                    <label for="kWNumber">Số điện đã dùng(kW)</label>
+                    <input type="number"  id="kWNumber" placeholder="Nhập vào số điện"> <br>
+                    <button type="button" id="btnBai2" class="btn btn-success my-5">Tính tiền điện</button>
+                  </form>
+                  <h3 id="resultBai2" class="text-primary"></h3>
+                </div>
                 <!-- bài 3  -->
-                <div class="tab-pane fade" id="Bai3" role="tabpanel" >Bai 3</div>
+                <div class="tab-pane fade" id="Bai3" role="tabpanel" >
+                  <h3 class="text-center text-primary">Tính thuế thu nhập cá nhân</h3>
+                  <form class="formBai3">
+                    <label for="userName3">Nhập tên người dùng</label>
+                    <input type="text" id="userName3"> <br>
+                    <label for="userIncome">Tổng thu nhập 1 năm </label>
+                    <input type="number" id="userIncome"> <br>
+                    <label for="ngPT">Số người phụ thuộc</label>
+                    <input type="number" id="ngPT"> <br>
+                    <button type="button" id="btnBai3" class="btn btn-primary my-5">Tính thuế</button>
+                  </form>
+                  <h3 id="resultBai3" class="text-primary"></h3>
+                </div>
                 <!-- bài 4  -->
                 <div class="tab-pane fade" id="Bai4" role="tabpanel" >Bai 4</div>
               </div>
@@ -84,5 +106,8 @@
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
     <script src="./js/bai1.js"></script>
+    <script src="./js/bai2.js"></script>
+    <script src="./js/bai3.js"></script>
+    <script src="./js/bai4.js"></script>
 </body>
 </html>
